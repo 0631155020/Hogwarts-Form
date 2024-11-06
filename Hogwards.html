@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwards Registration Form</title>
+    <link rel="stylesheet" href="hogwards.css">
+</head>
+<body>
+   <h1>Hogwards Registration Form</h1> 
+   <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" 
+            required placeholder="e.g., Harry James Potter">
+        </div>
+        <div>
+            <label>
+                Date of birth
+                <input type="date" name="dob" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                House
+            <select name="house" required>
+                <option value="">
+                    Please choose an option
+                </option>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="revenclaw">Rewenclaw</option>
+                <option value="Hupplepuf">Hupplepuf</option>
+                <option value="Slizerin">Slizerin</option>
+            </select>
+        </label>
+        </div>
+        <div>
+            <label>
+                I hereby state that I have companion pet.
+                <input type="checkbox" name="has-pet" value="yes">
+            </label>
+                <fieldset class="conditional">
+                    <legend>Companion pet</legend>
+                    <label>
+                        Species
+                        <input type="text" name="pet-species" 
+                        placeholder="e.g., owl">
+                    </label>
+                    <label>
+                        Name
+                        <input type="text", name="pet-name" 
+                        placeholder="e.g., Hedwig">
+                    </label>
+                </fieldset>
+                <div>
+                    <label>
+                        Email
+                        <input type="email" name="email" required
+                        pattern=".+@hogwards\.ac\.uk" 
+                        placeholder="e.g., hjp@hogwards.ac.uk">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Comments
+                        <textarea name="comments" rows="5" maxlength="200"
+                        placeholder="e.g., I would like to be included into the quidich team">
+                        </textarea>
+                    </label>
+                </div>
+            </label>
+        </div>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+   </form>
+</body>
+</html>
