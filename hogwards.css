@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+h1 {
+    font-family: "Henny Penny", sans-serif;
+}
+
+form {
+    background-color: mintcream;
+    width: 400px;
+    max-width: 50%;
+    overflow: auto;
+}
+
+div {
+    margin: 1em;
+}
+
+label {
+    display: block;
+}
+
+label:has(:is(input, select, textarea)[required])::before {
+    content: "*";
+    color: red;
+    vertical-align: super;
+    font-size: small;
+}
